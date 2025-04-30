@@ -16,13 +16,20 @@ const Home = () => {
         >
           Add Patient
         </button>
-        <button className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full">
+        <button 
+          className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full"
+          onClick={() => navigate("/bookAppointment")}
+        >
           Book Appointment
         </button>
-        <button className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full">
+        <button className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full" 
+        onClick={() => navigate("/viewAppointment")}
+        >
           View Appointments
         </button>
-        <button className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full">
+        <button className="p-3 text-lg font-bold text-white hover:bg-blue-700 hover:shadow-md bg-blue-500 rounded-md w-full"
+        onClick={()=> navigate("/payment")}
+        >
           Payment
         </button>
       </div>
